@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header h1 {
+    margin-left: 45%;
+}
+
+ul {
+    color: gray;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .Header h1 {
+        margin-left: 35%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Header h1 {
+        margin-left: 25%;
+    }
+
+    ul {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    ul {
+        display: none;
+    }
+
+    .Header h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    border: 2px solid rgb(181, 181, 181);
+    color: gray;
+    border-radius: 20px;
+}
+
+.SearchBar {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.Products {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: inline-block;
+    border: 2px solid black;
+    width: 300px;
+    margin: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.box:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .Products {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 80%;
+    }
+}
+
+.about {
+    margin: 40px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .about {
+        margin: 20px;
+    }
+}
+
+.footer {
+    padding: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,80 @@
+*
+{
+    margin: 0%;
+    border: 0%;
+    font-family: sans-serif;
+}
+.head
+{
+    padding: 20px;
+    background-color:#806BDC;;
+    color: white;
+}
+.head h1
+{
+    padding-left:40%;
+}
+.Products
+{
+    padding: 20px;
+    display:flex;
+    justify-content: space-around;
+}
+.head ul li
+{
+    padding: 5px;
+    font-size: 10px;
+}
+.box p
+{
+    margin: 5px;
+    text-align: center;
+}
+.box:hover
+{
+    cursor: pointer;
+    color: #806BDC;
+}
+.mid
+{
+    background-color: rgb(202, 202, 202);
+    padding: 40px 75px;
+}
+table caption h1
+{
+    margin: 20px;
+}
+table,th,td{
+    border: 1px solid rgb(175, 175, 175);
+    border-collapse:collapse ;
+    padding: 10px;
+}
+table th{
+    background-color: #806BDC;
+    width: 300px;
+}
+table td{
+    text-align: left;
+}
+th{
+    text-align: center;
+}
+.descrip
+{
+    color: rgb(152, 152, 152);
+    margin: 20px;
+}
+.descrip p,ul,li{
+    font-size:12px;
+    word-spacing: -2px;
+}
+.descrip ul,li{
+    text-align: start;
+}
+footer
+{
+    padding: 25px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
