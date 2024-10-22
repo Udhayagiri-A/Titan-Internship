@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <style>
+        body
+        {
+            background-color: rgb(234, 234, 234);
+        }
+        table
+        {
+            border-collapse:collapse ;
+            width: 80%;
+            text-align: center;
+            font-family: sans-serif
+        }
+        table tr td
+        {
+            border: 2px solid black;
+            font-size: 20px;
+        }
+        .tb
+        {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            position: relative;
+            top: 200px;
+        }
+        table tr td{
+            height: 40px;
+        }
+        th{
+            font-size: 25px;
+            border: 2px solid black;
+            height: 25px;
+        }
+        tr:nth-child(even)
+        {
+            background-color: rgb(222, 222, 222);
+        }
+        tr:nth-child(odd)
+        {
+            background-color: rgb(187, 187, 187);
+        }
+    </style>
+</head>
+<body>
+    <div class="tb">
+        <table >
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+            {% for user in usersDetail %}
+            <tr>
+                <td>{{user[0]}}</td>
+                <td>{{user[1]}}</td>
+                <td>{{user[2]}}</td>
+                <td>{{user[3]}}</td>
+                
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+</body>
+</html>
